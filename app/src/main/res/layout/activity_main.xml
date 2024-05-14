@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
@@ -16,6 +17,7 @@
         tools:ignore="HardcodedText" />
 
     <ImageView
+        android:id="@+id/imgPhoto"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_below="@+id/btnTake"
@@ -24,4 +26,12 @@
         android:layout_marginTop="16dp"
         tools:ignore="ContentDescription" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tvPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgPhoto"
+        android:text="FileName:"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
